@@ -47,7 +47,7 @@ if user_input:
     st.session_state.chat_history.append(("user", user_input))
     with st.spinner("🤖 Thinking..."):
         try:
-            resp = requests.post(f"{BACKEND_URL}/chat", json={"message": user_input})
+            resp = requests.post(f"https://calendarbookingbot-backend.streamlit.app/chat", json={"message": user_input})
             reply = resp.json().get("response", "⚠️ No response from server.")
         except Exception as e:
             reply = f"❌ Error: {str(e)}"
