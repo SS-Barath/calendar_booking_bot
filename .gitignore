@@ -1,0 +1,15 @@
+# Python virtual environment
+venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+credentials.json
+
+# Editor and OS-specific files
+.vscode/
+.idea/
+*.DS_Store
